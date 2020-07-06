@@ -4,13 +4,16 @@ CommandTimeline is designed for pentesters to log all commands run on your Linux
 Two use cases exist for the tool. First, a single tester can log all their commands for archiving and/or providing to the customer. Second, teams of pentesters can merge their command histories together, then run the tool against the combined history file to see all commands in sorted, timeline order. The multi-team member environment was the original design of the tool.
 ## Commands to setup logging
 * File to edit: .bashrc
-  * `HISTSIZE=3000`
-  * `HISTFILESIZE=5000`
-  * `export HISTTIMEFORMAT="%F %T "`
-  * `export HISTIGNORE="histor*:clear:exit"`
-  * `export PROMPT_COMMAND='history -a'`
+  * Edit in place:
+    * `HISTSIZE=3000`
+    * `HISTFILESIZE=5000`
+  * Append to file:
+    * `export HISTTIMEFORMAT="%F %T "`
+    * `export HISTIGNORE="histor*:clear:exit"`
+    * `export PROMPT_COMMAND='history -a'`
 * File to edit: .bash_logout
-  * `history -w`
+  * Append to file:
+    * `history -w`
 * Run from Terminal
   * `export HISTTIMEFORMAT="%F %T "`
   * `history -w`
