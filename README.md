@@ -24,3 +24,7 @@ The basic gist of the tool is simple.
 1. Ensure commands to setup logging have occurred
 1. Update command-timeline.py file with the path to the combined history file (line #18)
 1. Run: `python3 command-timeline.py`
+## Storing CommandTimeline archive in database
+(TBD)
+## Obfuscating passwords in CommandTimeline archive
+(TBD)
