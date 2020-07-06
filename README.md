@@ -3,14 +3,14 @@ CommandTimeline is designed for pentesters to log all commands run on your Linux
 
 ## Commands to setup logging
 * File to edit: .bashrc
-  * HISTSIZE=3000
-  * HISTFILESIZE=5000
-  * export HISTTIMEFORMAT="%F %T "
-  * export HISTIGNORE="histor*:clear:exit"
-  * export PROMPT_COMMAND='history -a'
+  * `HISTSIZE=3000`
+  * `HISTFILESIZE=5000`
+  * `export HISTTIMEFORMAT="%F %T "`
+  * `export HISTIGNORE="histor*:clear:exit"`
+  * `export PROMPT_COMMAND='history -a'`
 * File to edit: .bash_logout
-  * history -w
+  * `history -w`
 * Run from Terminal
-  * export HISTTIMEFORMAT="%F %T "
-  * history -w
-  * reboot
+  * `export HISTTIMEFORMAT="%F %T "`
+  * `history -w`
+  * `reboot`
